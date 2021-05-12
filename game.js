@@ -38,7 +38,10 @@ function checkAnswer(currentLevel){
         setTimeout(function(){
             $("body").removeClass("game-over");
         },200);
-        $("#level-title").html("Game Over!!! <br>"  + "You were supposed to click " + gamePattern[currentLevel] +". <br> Press Any Key to Restart");
+        $("#level-title").html("Game Over!!! <br>"  + " You went upto level " + 
+        currentLevel + " <br>You were supposed to click " + 
+        gamePattern[currentLevel] +". <br> Press Any Key to Restart.");
+
         startOver();
     }
        
